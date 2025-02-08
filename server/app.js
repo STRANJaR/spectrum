@@ -1,12 +1,14 @@
-import express from 'express';
+import express from 'express'
 
 const app = express();
-const PORT = process.env.PORT
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.json({
+        message: 'Hello World',
+        body: 'Welcome to spectrum server'
+    });
 });
 
-app.listen(3000, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+app.listen(process.env.PORT || 3000, ()=> {
+    console.log(`Server is running on port http://localhost:${process.env.PORT || 3000}`);
+})

@@ -10,10 +10,10 @@ const Header = () => {
                 </div>
 
                 <div className='flex items-center justify-center gap-20 text-base font-medium'>
-                    <Link to={'#'}>Home</Link>
-                    <Link to={'#'}>Features</Link>
-                    <Link to={'#'}>Pricing</Link>
-                    <Link to={'#'}>Testimonials</Link>
+                    <Link className='hover:text-blue-600 p-1 transition-all' to={'#'}>Home</Link>
+                    <Link className='hover:text-blue-600 p-1 transition-all'  to={'/features'}>Features</Link>
+                    <Link className='hover:text-blue-600 p-1 transition-all'  to={'#'}>Pricing</Link>
+                    <Link  className='hover:text-blue-600 p-1 transition-all'  to={'#'}>Testimonials</Link>
                 </div>
 
 

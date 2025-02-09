@@ -8,7 +8,14 @@
 }
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'tt_firs_neue','Fira Sans', sans-serif;
     background-color: var(--color-white);
     color: var(--color-bg);
+}
+
+@font-face {
+    font-family: 'tt_firs_neue';
+    src:local("TT-Firs-Regular.ttf"),
+    url('./fonts/tt_firs_neue/TT-Firs-Regular.ttf');
+    
 }
